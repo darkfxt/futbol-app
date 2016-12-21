@@ -1,0 +1,19 @@
+{
+  "name": "social-login",
+  "description": "An Angular component to login with a social account",
+  "main": "index.js",
+  "authors": [
+    "Matias L. Jerez"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "app/libs",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

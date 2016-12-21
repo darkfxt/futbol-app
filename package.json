@@ -1,0 +1,38 @@
+{
+  "name": "social-login",
+  "version": "1.0.0",
+  "description": "An Angular component to login with a social account",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Matias L. Jerez",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.4.6",
+    "body-parser": "~1.15.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "express-session": "^1.14.2",
+    "mongoose": "^4.6.5",
+    "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "serve-favicon": "~2.3.0"
+  }
+}

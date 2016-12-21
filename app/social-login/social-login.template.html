@@ -1,0 +1,23 @@
+<div class="scroll-container">
+    <!-- Muestro imagen de perfil y datos del usuario si está loggeado -->
+    <div class="user-data" ng-show="isLogged == true">
+        <div class="portrait-img"></div>
+        <div class="user-data"></div>
+    </div>
+    <div class="logged-out" ng-show="isLogged != true">
+        <div class="unsigned-portrait dropdown">
+            <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" />
+        </div>
+        <div class="panel login-signup">
+            <form class="form-signin" action="/api/login" method="POST">
+                <input type="text" name="username" class="form-control" placeholder="Email" required autofocus />
+                <input type="password" name="password" class="form-control" placeholder="Password" required />
+                <button class="btn btn-lg btn-primary btn-block" type="submit"> Ingresar </button>
+                <span class="clearfix"></span>
+            </form>
+            <a href="/login/google" class="btn btn-block btn-social btn-google-plus">Ingresar con Google+<i class="fa fa-google-plus"></i></a>
+            <a href="/login/facebook" class="btn btn-block btn-social btn-facebook">Ingresar con Facebook<i class="fa fa-facebook"></i></a>
+            <a href="/login/twitter" class="btn btn-block btn-social btn-twitter">Ingresar con Twitter<i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
